@@ -1,0 +1,5 @@
+lifeExpentancy <- read.csv("C:\\Users\\spide\\OneDrive\\바탕 화면\\빅데이터예측분석\\Life Expectancy Data_1.csv")
+View(lifeExpentancy )
+attach(lifeExpentancy)
+m2 <- lm(Life.expectancy~Status+Alcohol+GDP+Population)
+summary(m2)
